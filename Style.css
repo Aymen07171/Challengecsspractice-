@@ -1,0 +1,130 @@
+
+:root {
+
+    --ff:  'Roboto', sans-serif;
+    --colorbutton : #4787ea;
+    --backgroundcolor: #505050;
+    --colortexte : white;
+    --p: 18px/22px var(--ff);
+    --p1: 600px var(--ff);
+    --border-radius: 10px; 
+    --shadow: #2f844d3f 10px 5px 0px 3px;
+    --glass-bg: rgba(201, 201, 201, 0.59);  /* or rgba(0, 0, 0, 0.1) for darker glass */
+    --glass-border: rgba(207, 207, 207, 0.529);
+    --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --glass-blur: 10px;
+}
+
+
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.container-body {
+    background: rgba(129, 129, 129, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(243, 221, 221, 0.399);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.p {
+    font-size: var(--p);
+}
+
+.product-card-container {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.product-img-container img {
+
+    width: 300px; /* or whatever size you want */
+    height: 400px;
+    object-fit: contain;    
+}
+
+
+.product-header button {
+
+    background-color: rgb(133, 185, 164);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--p);
+    color: var(--colortexte);
+    padding: 8px;
+}
+
+.product-header  {
+    margin-bottom: 50px;
+    font-family: var(--ff);
+}
+
+.product-details > #discount {
+
+    text-decoration-line: line-through;
+    color:#505050;
+    margin: 0; /* Removes all margins */
+
+
+}
+
+
+.product-details h2 {
+    color: rgb(58, 2, 58);
+    font-size: 50px ;
+    margin: 0; /* Removes all margins */
+    font-family: var(--ff);
+}
+
+.product-details button {
+
+    
+    background-color: rgb(61, 0, 61);
+
+    border-radius: var(--border-radius);
+    font-size: 40px;
+    background-color:rgb(133, 185, 164);
+    color: var(--colortexte);
+    padding: 3px 80px 3px 80px;
+    box-shadow: var(--shadow);
+    
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+.product-details-text {
+    margin-bottom: 20px;
+    font-family: var(--ff);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.footer-button-body {
+    display: flex;
+    gap: 40px;
+}
+
+.button-footer {
+    background-color: var(--backgroundcolor);
+    color: var(--colortexte);
+    padding: 10px 20px 10px 20px;
+    border-radius: var(--border-radius);
+
+}
